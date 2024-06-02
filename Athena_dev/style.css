@@ -97,3 +97,49 @@ button {
     background-color: cyan;
     color: black;
 }
+
+footer{
+    color: #FFFFFF;
+    padding: 5px;
+    background-color: #021859;
+    font-family: Roboto;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: auto;
+    display: flex;
+
+    
+}
+
+#icones_redes_sociais{
+    color: #FFFFFF;
+    display:flex;
+    margin: 5px;
+}
+
+.img_rede_social{
+    height: 20px;
+    width: 20px;
+}
+
+.texto_rodape{
+    background-color:#30A8F2;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity :0.7;
+
+}
+
+#icone_youtube{
+    height: 70%;
+    width: 50%;
+}
+
+#rodape{
+    display: flex;
+}
+
+#nossa_empresa{
+    display: flex;
+    flex-direction: column
+}
