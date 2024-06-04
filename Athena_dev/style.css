@@ -106,9 +106,7 @@ footer{
     justify-content: space-between;
     align-items: flex-end;
     height: auto;
-    display: flex;
-
-    
+    display: flex;   
 }
 
 #icones_redes_sociais{
