@@ -75,39 +75,43 @@ a {
     align-items: center;
 }
 
-/* ------------------------------------ Main ------------------------------------ */
+/*----------------------------Main---------------------------------*/
 
-#primary {
-    margin-top: 50px;
-    width: 100%;
-    height: 100vh;
+main{
     display: flex;
+    justify-content: center;
+}
+
+.Principal{
+    width: 70%;
+    height: auto;
+    background-color: #021859;
+    margin: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap-reverse;
-    align-content: center;
-    justify-content: space-evenly;
-    text-align: center;
 }
 
-#primary>img {
-    width: 40%;
-    min-width: 40%;
+
+.cadastro{
+    border: solid 2px green;
+    height: auto;
+    width: 60%;
+    margin-top: 110px;
+    font-family: 'Graduate';
+    display: flex;
+
 }
 
-.column {
-    display: flexbox;
+#User{
+    width: auto;
+    height: 20%;
 }
 
-strong {
-    color: cyan;
-}
 
-button {
-    margin-top: 20px;
-    padding: 20px 26px;
-    background-color: cyan;
-    color: black;
-}
+
+
+
 
 /* ----------------------------- Rodapé ----------------------------- */
 
@@ -117,9 +121,9 @@ footer {
     background-color: #021859;
     font-family: Roboto;
     justify-content: space-between;
-    height: 150px;
+    height: 200px;
     display: flex;
-    
+   
 }
 
 #redes_sociais {
@@ -178,17 +182,4 @@ footer {
 
 .EmpresaContato {
     margin-right: 1rem;
-}
-
-@media (max-width: 900px) {
-    .img_logo+h1 {
-        display: none;
-    }
-    #burger {
-        display: flex;
-        align-items: center;
-    }
-    #menu {
-        display: none;
-    }
 }
