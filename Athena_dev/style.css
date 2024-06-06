@@ -32,7 +32,7 @@ header {
     align-items: center;
 }
 
-.logo {
+.img_logo {
     width: 5em;
     margin: 0 5px;
 }
@@ -47,7 +47,16 @@ header {
     list-style-type: none;
 }
 
-#links>li {
+#burger {
+    display: none;
+    cursor: pointer;
+}
+
+menu {
+    display: flex;
+}
+
+#links>menu>li {
     width: 150px;
     padding: 10px;
     text-align: center;
@@ -82,6 +91,7 @@ a {
 
 #primary>img {
     width: 40%;
+    min-width: 40%;
 }
 
 .column {
@@ -101,46 +111,83 @@ button {
 
 /* ----------------------------- Rodapé ----------------------------- */
 
-footer{
+footer {
     color: #FFFFFF;
     padding: 5px;
     background-color: #021859;
     font-family: Roboto;
     justify-content: space-between;
-    align-items: flex-end;
-    height: auto;
-    display: flex;   
+    height: 150px;
+    display: flex;
 }
 
-#icones_redes_sociais{
+#redes_sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+#icones_redes_sociais {
     color: #FFFFFF;
-    display:flex;
-    margin: 5px;
+    display: flex;
+    justify-content: start;
 }
 
-.img_rede_social{
+.img_rede_social {
     height: 20px;
     width: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
-.texto_rodape{
-    background-color:#30A8F2;
+.texto_rodape {
     flex-direction: row;
     justify-content: space-between;
-    opacity :0.7;
+    padding: 6px;
+    color: white;
 }
 
-#rodape{
-    display: flex;
+.CorFundo {
+    background-color: rgb(48, 168, 242, 6%);
+    border-radius: 8px;
 }
 
-#nossa_empresa{
+#icone_youtube {
+    height: 45%;
+    width: 90%;
+}
+
+#rodape {
     display: flex;
-    flex-direction: column
+    align-items: start;
+    justify-content: start;
+    justify-content: space-between;
+}
+
+#Direito {
+    display: flex;
+    align-items: end;
+    font-size: 12px;
+}
+
+.opçoes {
+    padding: 4px;
+}
+
+.EmpresaContato {
+    margin-right: 1rem;
 }
 
 @media (max-width: 900px) {
-    .logo+h1 {
+    .img_logo+h1 {
+        display: none;
+    }
+    #burger {
+        display: flex;
+        align-items: center;
+    }
+    #menu {
         display: none;
     }
 }
