@@ -6,12 +6,15 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    /* border: 1px solid red; */
 }
 
 body {
-    background-color: #010626;
+    background-color: var(--cor-de-fundo);
     font-family: 'Roboto', serif;
+}
+
+:root {
+    --cor-de-fundo: #010626;
 }
 
 /* ------------------------------------ Header ------------------------------------ */
@@ -20,7 +23,7 @@ header {
     display: flex;
     width: 100%;
     height: 100px;
-    background-color: #010626;
+    background-color: var(--cor-de-fundo);
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -110,6 +113,22 @@ button {
     min-width: 40%;
 }
 
+#descricao {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+}
+
+.textao {
+    background-color: #021859;
+    padding: 50px;
+    margin: 0 30px;
+}
+
 .column {
     display: flexbox;
 }
@@ -123,7 +142,6 @@ button {
     flex-direction: column;
     align-items: center;
 }
-
 
 .cadastro{
     height: auto;
@@ -141,6 +159,9 @@ button {
 
 /* ----------------------------- Rodapé ----------------------------- */
 
+footer * {
+    border: 1px solid red;
+}
 footer {
     color: #FFFFFF;
     padding: 5px;
@@ -149,8 +170,6 @@ footer {
     justify-content: space-between;
     height: 150px;
     display: flex;
-    position: relative;
-    bottom: 0;
 }
 
 #redes_sociais {
@@ -158,7 +177,6 @@ footer {
     flex-direction: column;
     justify-content: end;
 }
-
 
 #icones_redes_sociais {
     color: #FFFFFF;
@@ -192,9 +210,6 @@ footer {
 
 #rodape {
     display: flex;
-    align-items: start;
-    justify-content: start;
-    justify-content: space-between;
 }
 
 #Direito {
