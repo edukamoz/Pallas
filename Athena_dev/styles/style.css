@@ -77,6 +77,22 @@ a {
 
 /* ------------------------------------ Main ------------------------------------ */
 
+main{
+    display: flex;
+    justify-content: center;
+}
+
+strong {
+    color: cyan;
+}
+
+button {
+    margin-top: 20px;
+    padding: 20px 26px;
+    background-color: cyan;
+    color: black;
+}
+
 #primary {
     margin-top: 50px;
     width: 100%;
@@ -98,15 +114,29 @@ a {
     display: flexbox;
 }
 
-strong {
-    color: cyan;
+.Principal{
+    width: 70%;
+    height: auto;
+    background-color: #021859;
+    margin: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-button {
-    margin-top: 20px;
-    padding: 20px 26px;
-    background-color: cyan;
-    color: black;
+
+.cadastro{
+    height: auto;
+    width: 60%;
+    margin-top: 110px;
+    font-family: 'Graduate';
+    display: flex;
+
+}
+
+#User{
+    width: auto;
+    height: 20%;
 }
 
 /* ----------------------------- Rodapé ----------------------------- */
@@ -119,7 +149,8 @@ footer {
     justify-content: space-between;
     height: 150px;
     display: flex;
-    
+    position: relative;
+    bottom: 0;
 }
 
 #redes_sociais {
