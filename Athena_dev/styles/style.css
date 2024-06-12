@@ -186,26 +186,14 @@ footer {
 
 .img_rede_social {
     height: 20px;
-    width: 20px;
     margin-right: 10px;
     margin-top: 5px;
 }
 
 .texto_rodape {
-    flex-direction: row;
-    justify-content: space-between;
     padding: 6px;
-    color: white;
-}
-
-.CorFundo {
     background-color: rgb(48, 168, 242, 6%);
     border-radius: 8px;
-}
-
-#icone_youtube {
-    height: 45%;
-    width: 90%;
 }
 
 #rodape {
