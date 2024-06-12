@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    border: 1px solid red;
 }
 
 body {
@@ -80,11 +81,6 @@ a {
 
 /* ------------------------------------ Main ------------------------------------ */
 
-main{
-    display: flex;
-    justify-content: center;
-}
-
 strong {
     color: cyan;
 }
@@ -123,6 +119,19 @@ button {
     text-align: center;
 }
 
+#mid-content {
+    height: 100vh;
+}
+
+#destaques {
+    /* overflow: hidden; */
+    width: 50%;
+}
+
+#destaques>img {
+    width: 100px;
+}
+
 .textao {
     background-color: #021859;
     padding: 50px;
@@ -135,26 +144,30 @@ button {
 
 .Principal{
     width: 70%;
-    height: auto;
+    height: 100vh;
     background-color: #021859;
-    margin: 50px 0 50px 0;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .cadastro{
-    height: auto;
-    width: 60%;
-    margin-top: 110px;
     font-family: 'Graduate';
     display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
+.registro {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
 }
 
 #User{
-    width: auto;
-    height: 20%;
+    height: 20rem;
 }
 
 /* ----------------------------- Rodapé ----------------------------- */
@@ -170,6 +183,7 @@ footer {
     justify-content: space-between;
     height: 150px;
     display: flex;
+    margin-top: 50px;
 }
 
 #redes_sociais {
