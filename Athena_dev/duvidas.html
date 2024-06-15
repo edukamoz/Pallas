@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +10,12 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Cadastro</title>
+ 
+    <title>Dúvidas</title>
 </head>
-
+ 
 <body>
-
-    <!-----------------------------Header---------------------------------------->
-
+ 
     <header>
 
         <div id="logo">
@@ -48,49 +47,35 @@
         </nav>
 
     </header>
-
-    <!-----------------------------Main---------------------------------------->
-
-    <main class="alinhar">
-        <div class="Principal">
-
-            <div class="titulo">
-                <p>CADASTRO ATHENA.DEV</p>
+ 
+    <main>
+ 
+        <section class="help-section">
+            <h1>COMO PODEMOS AJUDAR?</h1>
+            <div class="search-box">
+                <input type="text" placeholder="Informe sua dúvida...">
+                <button type="submit">&#128269;</button>
             </div>
-            <div class="cadastro">
-
-                <div id="img_user">
-                    <img src="/Athena_dev/img/icone_perfil.png" alt="Icone_Usuário" id="User">
-                    <button id="Carregar">Carregar Imagem</button>
+            <h2>DÚVIDAS FREQUENTES</h2>
+            <br>
+            <div class="faq">
+                <div class="faq-item">
+                    <h3>O SITE É PAGO?</h3>
+                    <p style="font-family: Roboto;">Não, o site é totalmente gratuito para os usuários.</p>
                 </div>
-
-                <div id="formCad">
-                    <form>
-                        <label for="email">E-mail:</label>
-                        <input id="email" type="text">
-
-                        <label for="senha">Senha:</label>
-                        <input id="senha" type="password">
-
-                        <label for="confirmacao">Confirme sua senha:</label>
-                        <input id="confirmacao" type="password">
-                    </form>
+                <div class="faq-item">
+                    <h3>COMO POSSO APOIAR O SITE?</h3>
+                    <p style="font-family: Roboto;">Você pode nos apoiar entrando em contato conosco ou enviando um valor em dinheiro.</p>
                 </div>
-
-
+                <div class="faq-item">
+                    <h3>QUAL O OBJETIVO DO SITE?</h3>
+                    <p style="font-family: Roboto;">Nosso objetivo é facilitar e tornar mais divertido o aprendizado da programação.</p>
+                </div>
             </div>
-            <div class="cadastroButons">
-                <button class="buton"><a href=""></a>Já sou cadastrado</button>
-                <button class="buton" id="finalizarCadastro">Finalizar Cadastro</button>
-            </div>
-
-        </div>
-
+        </section>
+ 
     </main>
-
-
-    <!-----------------------------Rodapé---------------------------------------->
-
+ 
     <footer>
         <div id="rodape">
             <div class="EmpresaContato">
@@ -124,7 +109,7 @@
     </footer>
 
     <script src="script.js"></script>
-
+ 
 </body>
-
+ 
 </html>

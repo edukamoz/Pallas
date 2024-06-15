@@ -30,6 +30,8 @@ header {
     justify-content: space-between;
     position: fixed;
     top: 0;
+    z-index: 100;
+    box-shadow: 0px 1px 10px black;
 }
 
 #logo {
@@ -88,8 +90,10 @@ a {
 }
 
 /* ------------------------------------ Main ------------------------------------ */
+/* ------------------------------------ Index ------------------------------------ */
 
 main {
+    margin-top: 100px;
     min-height: 100vh;
 }
 
@@ -164,48 +168,214 @@ strong {
     display: flexbox;
 }
 
-.Principal{
-    width: 70%;
-    height: 100vh;
-    background-color: #021859;
-    margin: auto;
+/* ------------------------------------ Cadastro ------------------------------------ */
+
+.alinhar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Principal{ 
+    width: 60%;
+    background-color: var(--cor-secundaria);
+    margin: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.titulo{
+    display: flex;
     justify-content: center;
+    font-family: 'Graduate';
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+p{
+    text-shadow: 4px 3px black;;
 }
 
 .cadastro{
+    height: auto;
+    font-size: 30px;
+    width: 60%;
+    margin-top: 20px;
     font-family: 'Graduate';
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-}
-
-.registro {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 50px;
 }
 
 #User{
-    height: 20rem;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#img_user{
+    height: auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Carregar{
+    border-radius: 7px;
+    padding: 3px 10px 3px 10px;
+    color: black;
+    border: none;
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: large;
+}
+
+input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 2px 3px black;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: black;
+    text-indent: 10px;
+    font-size: 1.5rem;
+}
+
+#formCad{
+    width: 50%;
+    height: 70%;
+}
+
+.cadastroButons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.buton{
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 5px 6px black;
+    margin-bottom: 10px;
+    color: black;
+    font-family: initial;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ----------------------------- Dúvidas ----------------------------- */
+
+.help-section {
+    text-align: center;
+    max-width: 80vw;
+    margin: auto;
+    min-width: 300px;
+}
+ 
+.help-section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+ 
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+ 
+.search-box input {
+    padding: 10px;
+    font-size: 1em;
+    width: 70%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: black;
+}
+ 
+.search-box button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #6c5ce7;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+ 
+.search-box button:hover {
+    background-color: #81ecec;
+}
+ 
+.faq-item {
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* ----------------------------- Desafios ----------------------------- */
+ 
+.level-section {
+    margin-bottom: 40px;
+}
+ 
+.challenge {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+ 
+.challenge.inic {
+    background-color: #4CAF50;
+}
+ 
+.challenge.intermed {
+    background-color: #B8860B;
+}
+ 
+.challenge.avan {
+    background-color: #8B0000;
+}
+ 
+.codar-btn {
+    background-color: #7C05F2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0px 20px;
+    bottom: -35px; 
 }
 
 /* ----------------------------- Games ----------------------------- */
 
 section {
     padding: 50px;
-}
-
-.joguinho img {
-    min-width: 300px;
-    max-width: 40vw;
-}
-
-.joguinho {
-    height: 70vh;
-    background: var(--cor-secundaria);
 }
 
 #principal{
@@ -216,6 +386,16 @@ section {
  
 #tituloGames{
     margin-top: 20vh;
+}
+
+.joguinho img {
+    min-width: 300px;
+    max-width: 40vw;
+}
+
+.joguinho {
+    height: 70vh;
+    background: var(--cor-secundaria);
 }
  
 .botao1 {
@@ -236,12 +416,11 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: auto;
     width: 70%;
     height: 70vh;
-    margin-top: 11%;
+    margin: auto;
+    margin-top: 150px;
     border: 3px solid #7C05F2;
-    margin: 10%;
 }
 
 /* ----------------------------- Rodapé ----------------------------- */
@@ -272,6 +451,16 @@ footer {
     justify-content: start;
 }
 
+#rodape {
+    display: flex;
+}
+
+#Direito {
+    display: flex;
+    align-items: end;
+    font-size: 12px;
+}
+
 .img_rede_social {
     height: 20px;
     margin-right: 10px;
@@ -282,16 +471,6 @@ footer {
     padding: 6px;
     background-color: rgb(48, 168, 242, 6%);
     border-radius: 8px;
-}
-
-#rodape {
-    display: flex;
-}
-
-#Direito {
-    display: flex;
-    align-items: end;
-    font-size: 12px;
 }
 
 .opçoes {
@@ -309,9 +488,19 @@ footer {
     #burger {
         display: flex;
         align-items: center;
+        margin-right: 50px;
     }
     #menu {
         display: none;
+        flex-direction: column;
+        background-color: var(--cor-de-fundo);
+    }
+    #links {
+        align-items: center;
+    }
+    nav menu{
+        position: relative;
+        top: 60px;
     }
     #slogan {
         font-size: 3rem;
