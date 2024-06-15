@@ -16,6 +16,7 @@ body {
 
 :root {
     --cor-de-fundo: #010626;
+    --cor-secundaria: #021859;
 }
 
 /* ------------------------------------ Header ------------------------------------ */
@@ -79,6 +80,13 @@ a {
     align-items: center;
 }
 
+.active {
+    background-image: url("../img/retangulo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* ------------------------------------ Main ------------------------------------ */
 
 main {
@@ -89,11 +97,21 @@ strong {
     color: cyan;
 }
 
-button {
+#slogan {
+    font-size: 4rem;
+}
+
+.botao {
     margin-top: 20px;
-    padding: 20px 26px;
-    color: black;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 30px;
+    color: white;
     border: none;
+    background-image: url("../img/retangulo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #primary {
@@ -137,7 +155,7 @@ button {
 }
 
 .textao {
-    background-color: #021859;
+    background-color: var(--cor-secundaria);
     padding: 50px;
     margin: 0 30px;
 }
@@ -174,16 +192,57 @@ button {
     height: 20rem;
 }
 
-.joguinho * {
-    border: 1px solid red;
+/* ----------------------------- Games ----------------------------- */
+
+section {
+    padding: 50px;
+}
+
+.joguinho img {
+    min-width: 300px;
+    max-width: 40vw;
 }
 
 .joguinho {
-    background: blue;
+    height: 70vh;
+    background: var(--cor-secundaria);
 }
 
-.joguinho>h1 {
-    width: fit-content;
+#principal{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+ 
+#tituloGames{
+    margin-top: 20vh;
+}
+ 
+.botao1 {
+    width: auto;
+    height: auto;
+    background:#7C05F2;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0px 20px;
+    bottom: 50px;
+    left: 75%;
+    position: relative;
+}
+
+/* ----------------------------- Recursos ----------------------------- */
+
+.principal1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 70%;
+    height: 70vh;
+    margin-top: 11%;
+    border: 3px solid #7C05F2;
+    margin: 10%;
 }
 
 /* ----------------------------- Rodapé ----------------------------- */
@@ -254,5 +313,8 @@ footer {
     }
     #menu {
         display: none;
+    }
+    #slogan {
+        font-size: 3rem;
     }
 }
