@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -81,6 +81,10 @@ a {
 
 /* ------------------------------------ Main ------------------------------------ */
 
+main {
+    min-height: 100vh;
+}
+
 strong {
     color: cyan;
 }
@@ -88,8 +92,8 @@ strong {
 button {
     margin-top: 20px;
     padding: 20px 26px;
-    background-color: cyan;
     color: black;
+    border: none;
 }
 
 #primary {
@@ -170,11 +174,20 @@ button {
     height: 20rem;
 }
 
-/* ----------------------------- Rodapé ----------------------------- */
-
-footer * {
+.joguinho * {
     border: 1px solid red;
 }
+
+.joguinho {
+    background: blue;
+}
+
+.joguinho>h1 {
+    width: fit-content;
+}
+
+/* ----------------------------- Rodapé ----------------------------- */
+
 footer {
     color: #FFFFFF;
     padding: 5px;
@@ -184,6 +197,9 @@ footer {
     height: 150px;
     display: flex;
     margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
 
 #redes_sociais {
