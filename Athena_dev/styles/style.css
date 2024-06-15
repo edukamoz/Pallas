@@ -219,8 +219,7 @@ section {
 }
  
 .botao1 {
-    width: auto;
-    height: auto;
+    padding: 10px 20px;
     background:#7C05F2;
     color: #FFFFFF;
     text-transform: uppercase;
