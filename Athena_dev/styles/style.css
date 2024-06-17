@@ -446,40 +446,54 @@ input{
 
 /* ----------------------------- Games ----------------------------- */
 
-section {
-    padding: 50px;
-}
 
 #principal{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+img{
+    max-width: 80%;
+}
+ 
+#im1{
+    max-width:72%;
+}
+ 
+body{
+    background-color: #010626;
+}
+ 
+.row1{
+    text-align: center;
+}
+ 
+.paragrafo {
+    width: 80%;
+    color: #FFFF;
+}
+ 
+.subtitulo {
+    color: #FFFF;
+    font-size: 25px;
 }
  
 #tituloGames{
-    margin-top: 20vh;
-}
-
-.joguinho img {
-    min-width: 300px;
-    max-width: 40vw;
-}
-
-.joguinho {
-    height: 70vh;
-    background: var(--cor-secundaria);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
  
 .botao1 {
-    padding: 10px 20px;
+    width: 13%;
+    height: 13%;
     background:#7C05F2;
     color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 0px 20px;
-    bottom: 50px;
-    left: 75%;
-    position: relative;
+    border-radius: 0px 20px 0px 20px;
+    bottom: auto;
 }
 
 /* ----------------------------- Recursos ----------------------------- */
