@@ -16,6 +16,7 @@ body {
 
 :root {
     --cor-de-fundo: #010626;
+    --cor-primaria: ##7C05F2;
     --cor-secundaria: #021859;
 }
 
@@ -140,6 +141,7 @@ strong {
     display: flex;
     flex-direction: row;
     box-shadow: 0px 0px 8px 0.5px cyan;
+    margin-top: 20px;
 }
 
 #destaques>img {
@@ -155,13 +157,22 @@ strong {
 
 #top-posts {
     box-shadow: 0px 0px 8px 0.5px cyan;
+    margin-top: 20px;
+}
+
+#rank_menu {
+    margin: 50px;
+    text-align: center;
 }
 
 #ranking-index {
     box-shadow: -1px -1px 8px 0.5px black;
-    background-color: black;
-    height: 200px;
+    background-image: url("../img/ranking_fundo.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    height: 900px;
     width: 100%;
+    margin-top: 20px;
 }
 
 .container {
