@@ -153,6 +153,17 @@ strong {
     margin: 50px;
 }
 
+#top-posts {
+    box-shadow: 0px 0px 8px 0.5px cyan;
+}
+
+#ranking-index {
+    box-shadow: -1px -1px 8px 0.5px black;
+    background-color: black;
+    height: 200px;
+    width: 100%;
+}
+
 .container {
     width: 50%;
 }
