@@ -37,3 +37,4 @@ document.addEventListener('DOMContentLoaded', function() {
         return emailRegex.test(email);
     }
 })
+

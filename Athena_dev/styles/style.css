@@ -212,24 +212,28 @@ strong {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    width: 80%;
+    margin: auto;
 }
 
 .bloquinho {
-    width: 400px;
-    height: 600px;
+    width: 240px;
+    height: 400px;
+    margin-right: 15px;
+    box-sizing:border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 8%;
     background: linear-gradient(to top, #2F68CE, #4C3BB0, #0029FF);
-    border-radius: 75px;
+    border-radius: 45px;
     padding: 50px;
 }
 
 .pessoinha {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     overflow: hidden;
     border-radius: 50%;
 }
