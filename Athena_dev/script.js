@@ -38,6 +38,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 })
 
+document.addEventListener('DOMContentLoaded', () => {
+    const carrossel = document.querySelector('#carrossel');
+    const items = document.querySelectorAll('.bloquinho');
+    const itemCount = items.length;
+    let currentIndex = 0;
+ 
+    function showNextItem() {
+        const itemWidth = items[0].clientWidth;
+        currentIndex = (currentIndex + 1) % itemCount;
+        carrossel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    }
+ 
+    setInterval(showNextItem, 2000);
+});
+
 $(document).ready(function(){
     $('#carrossel').slick({
         slidesToShow: 2, // Mostra 2 slides por vez
