@@ -83,6 +83,10 @@ a {
     align-items: center;
 }
 
+a:hover {
+    color: gray;
+}
+
 .active {
     background-image: url("../img/retangulo.png");
     background-size: contain;
@@ -199,7 +203,7 @@ strong {
     overflow: hidden;
     animation-name: animação;
     animation-duration: 20s;
-    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 #descricao {
@@ -364,7 +368,7 @@ input{
     width: 100%;
 }
 
-.buton{
+.buton, .buton>a{
     width: 250px;
     height: 50px;
     border: none;
@@ -376,6 +380,7 @@ input{
     font-size: 23px;
     font-weight: bold;
     cursor: pointer;
+    justify-content: center;
 }
 
 /* ----------------------------- Dúvidas ----------------------------- */

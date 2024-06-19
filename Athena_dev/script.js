@@ -46,5 +46,36 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         dots: true,
         arrows: true
-    });
-});
+    })
+})
+
+// timer de recuperação da senha
+
+var timerIntervalo;
+
+function startTimer() {
+    var timerDisplay = document.getElementById('timer');
+    timerDisplay.style.display = 'block'; 
+
+    var countdownDisplay = document.getElementById('countdown');
+    var tempoRestante = 300;
+
+    updateDisplay();
+
+    timerIntervalo = setInterval(function() {
+        tempoRestante--;
+        updateDisplay();
+        
+        if (timeLeft <= 0) {
+            clearInterval(timerIntervalo);
+            timerDisplay.textContent = 'Tempo expirado!';
+        }
+    }, 1000);
+
+    function updateDisplay() {
+        var minutes = Math.floor(tempoRestante / 60);
+        var seconds = tempoRestante % 60;
+
+        countdownDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    }
+}

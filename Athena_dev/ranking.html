@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="tecnologia, site, projeto, fatec, programação, aprender, html, css, design">
+    <meta name="description" content="Site para aprender a fazer interface de páginas web">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="rankingStyle.css">
+
+    <title>Athena.dev</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="logo">
+            <a href="../Athena_dev/index.html">
+                <img class="img_logo" src="../Athena_dev/img/logo.png" alt="">
+                <h1>Athena.dev</h1>
+            </a>
+        </div>
+
+        <nav>
+
+            <ul id="links">
+                <span onclick="clickMenu()" id="burger" class="material-symbols-outlined">
+                    menu
+                </span>
+                <menu id="menu">
+                    <li><a href="desafios.html">Desafios</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li>
+                        <a href="Cadastro.html">Entrar
+                            <img class="user-icon" src="../Athena_dev/img/icon-profile.svg" alt="">
+                        </a>
+                    </li>
+                </menu>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <table border="3" cellpadding="10" cellspacing="5">
+        <thead>
+            <tr>
+                <th>Colocação</th>
+                <th>Foto de Perfil</th>
+                <th>Nome de Usuário</th>
+                <th>Pontos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="primeiroColocado">1</td>
+                <td id="primeiroColocado"><img src="foto1.jpg" alt="Foto de Perfil 1" width="50"></td>
+                <td id="primeiroColocado">Usuário 1</td>
+                <td id="primeiroColocado">1000</td>
+            </tr>
+            <tr>
+                <td id="segundoColocado">2</td>
+                <td id="segundoColocado"><img src="foto2.jpg" alt="Foto de Perfil 2" width="50"></td>
+                <td id="segundoColocado">Usuário 2</td>
+                <td id="segundoColocado">950</td>
+            </tr>
+            <tr>
+                <td id="terceiroColocado">3</td>
+                <td id="terceiroColocado"><img src="foto3.jpg" alt="Foto de Perfil 3" width="50"></td>
+                <td id="terceiroColocado">Usuário 3</td>
+                <td id="terceiroColocado">900</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img src="foto4.jpg" alt="Foto de Perfil 4" width="50"></td>
+                <td>Usuário 4</td>
+                <td>850</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><img src="foto5.jpg" alt="Foto de Perfil 5" width="50"></td>
+                <td>Usuário 5</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><img src="foto6.jpg" alt="Foto de Perfil 6" width="50"></td>
+                <td>Usuário 6</td>
+                <td>750</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><img src="foto7.jpg" alt="Foto de Perfil 7" width="50"></td>
+                <td>Usuário 7</td>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><img src="foto8.jpg" alt="Foto de Perfil 8" width="50"></td>
+                <td>Usuário 8</td>
+                <td>650</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><img src="foto9.jpg" alt="Foto de Perfil 9" width="50"></td>
+                <td>Usuário 9</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><img src="foto10.jpg" alt="Foto de Perfil 10" width="50"></td>
+                <td>Usuário 10</td>
+                <td>550</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td><img src="foto11.jpg" alt="Foto de Perfil 11" width="50"></td>
+                <td>Usuário 11</td>
+                <td>500</td>
+            </tr>
+        </tbody>
+    </table>
+    <!----------------------------Rodapé------------------------------------------------>
+
+    <footer>
+        <div id="rodape">
+            <div class="EmpresaContato">
+                <div class="CorFundo">
+                    <p class="texto_rodape">Nossa Empresa</p>
+                </div>
+                <p class="opçoes">Quem somos</p>
+                <p class="opçoes">Carreiras</p>
+                <p class="opçoes">Equipe</p>
+            </div>
+
+            <div class="EmpresaContato">
+                <div class="CorFundo">
+                    <p class="texto_rodape">Entre em contato</p>
+                </div>
+                <p class="opçoes">Canal de Suporte</p>
+                <p class="opçoes">Dúvidas</p>
+            </div>
+        </div>
+        <div id="Direito">
+            <p>© Todos os direitos reservados</p>
+        </div>
+
+        <div id="redes_sociais">
+            <p>Redes Sociais</p>
+            <div id="icones_redes_sociais">
+                <a href=""><img class="img_rede_social" src="../img/icone_facebook.png" alt="Icone Facebook"></a>
+                <a href=""><img class="img_rede_social" src="../img/icone_instagram.png" alt="Icone instagram"></a>
+                <a href=""><img class="img_rede_social" src="../img/icone_watssap.png" alt="Icone watssap"></a>
+                <a href=""><img class="img_rede_social" id="icone_youtube" src="../img/icone_youtube.png" alt="Icone youtube"></a>
+                <a href=""><img class="img_rede_social" src="../img/icone_playstore.png" alt="Icone playstore"></a>
+                <a href=""><img class="img_rede_social" src="../img/icone_twiter.png" alt="Icone twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
