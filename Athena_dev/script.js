@@ -38,3 +38,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 })
 
+$(document).ready(function(){
+    $('#carrossel').slick({
+        slidesToShow: 2, // Mostra 2 slides por vez
+        slidesToScroll: 2, // Rola 2 slides por vez
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: true
+    });
+});
