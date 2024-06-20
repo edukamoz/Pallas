@@ -36,7 +36,7 @@
                     <li><a href="games.html">Games</a></li>
                     <li><a href="recursos.html">Recursos</a></li>
                     <li>
-                        <a href="Cadastro.html">Entrar
+                        <a href="Login.html">Entrar
                             <img class="user-icon" src="../Athena_dev/img/icon-profile.svg" alt="">
                         </a>
                     </li>
@@ -52,31 +52,30 @@
     <main class="centralizar">
 
         <div class="Principal centralizar">
-            <div id="textoRecovery" class="login">
+            <div id ="textoLogin" class="login">
                 <p>RECUPERAR A MINHA SENHA</p>
             </div>
-            <br>
-            <div id="FormRecuperacao">
+<br>
+        <div id="FormRecuperacao">
                 <label>E-mail ou ID:</label>
-                <input id="credenciais_recuperacao" type="text">
+                <input id="email" type="text">
 
-            </div>
-
-            <div class="recuperar_botao">
-                <button class="button" onclick="startTimer()">Redefinir Senha</button>
-            </div>
-            <div id="timer">
-
-                <p>Feito!
-                    <br>
-                    Seu código de recuperação foi enviado para:
-                </p>
-                <p id="emailRecuperacao">(email)</p>
-                Para sua segurança, o código irá expirar em: <span id="countdown">5:00</span>
-            </div>
+        </div>
+            
+        <div class="recuperar_botao">
+            <button id="botaoRecover" class="button" onclick="startTimer()">Redefinir Senha</button>
         </div>
         <div>
-            <a href="Login.html" id="voltar_login">Voltar à página de Login</p>
+            <a href="Login.html" id="voltar_login">Voltar à página de Login</a>
+        </div>
+        <div id="timer">
+                    
+                <p>Feito!
+            <br>
+                Seu código de recuperação foi enviado para:
+                </p>
+                <p id="emailRecuperacao">(email)</p>
+                Para sua segurança, o código irá expirar em: <span id="countdown">5:00</span></div>
         </div>
 
     </main>

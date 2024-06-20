@@ -392,6 +392,7 @@ input {
 
 /* ----------------------------- Esqueceu Senha ----------------------------- */
 
+
 #textoLogin{
     font-size: 30px;
     display: flex;
@@ -407,26 +408,48 @@ input {
     color: #BE7DFF;
 }
 
-#timer {
-    display: none; 
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.mensagem {
-    display: none;
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;   
-}
-
 .centralizar {
     margin: auto;
     align-items: center;
     align-content: center;
     justify-content: center;
+}
+
+#timer {
+    display: none; 
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .mensagem {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    
+  }
+#voltar_login {
+    color: #BE7DFF;
+    justify-self: center;
+}
+#textoRecovery{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+.recuperar_botao {
+    display: flex;
+    justify-self: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.button{
+    padding: 5px;
+    color: black;
+    font-family: "Roboto" serif;
+    justify-self: center;
 }
 
 /* ----------------------------- Dúvidas ----------------------------- */
@@ -586,6 +609,82 @@ body{
     margin: auto;
     margin-top: 150px;
     border: 3px solid #7C05F2;
+}
+
+/*-------------------------------Ranking------------------------------*/
+
+.circle-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid black;
+}
+#primeiroColocado {
+    color: gold;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    font-size: larger;
+    -webkit-text-stroke-width: 10%;
+    -webkit-text-stroke-color: black;
+}
+#segundoColocado{
+    color: silver;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    font-size: larger;
+    -webkit-text-stroke-width: 10%;
+    -webkit-text-stroke-color: black;
+}
+#terceiroColocado{
+    color: #CD7F32;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    font-size: larger;
+    -webkit-text-stroke-width: 10%;
+    -webkit-text-stroke-color: black;
+}
+
+.podio {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -270px;
+
+}
+.degrau {
+    width: 300px;
+    margin: 0 10px;
+    text-align: center;
+}
+.first {
+    height: 700px;
+    background-color: gold;
+}
+.second {
+    height: 550px;
+    background-color: silver;
+}
+.third {
+    height: 400px;
+    background-color: #cd7f32;
+}
+.degrau img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.pontuacao{
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#ranking-lateral{
+    margin-left: 25px;
 }
 
 /* ----------------------------- Rodapé ----------------------------- */
