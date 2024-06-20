@@ -193,6 +193,14 @@ strong {
     display: flexbox;
 }
 
+#top-posts{
+    height: 54.5%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 8px 0.5px cyan;
+    margin-top: 20px;
+}
 /* ------------------------------------ Quem somos ------------------------------------ */
 #carrossel-container {
     display: flex;
