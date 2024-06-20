@@ -554,8 +554,8 @@ input {
     flex-direction: row;
     justify-content: space-around;
     margin:5%;
-    margin-left: auto;
-    margin-right: auto;
+    
+    
 }
  
 #im1, #im2 {
@@ -595,7 +595,7 @@ body{
     background:#7C05F2;
     color: #FFFFFF;
     border-radius: 0px 20px 0px 20px;
-    bottom: auto;
+    
 }
 
 /* ----------------------------- Recursos ----------------------------- */
